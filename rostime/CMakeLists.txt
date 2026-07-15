@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(rostime)
 
 find_package(catkin REQUIRED COMPONENTS cpp_common)
-find_package(Boost REQUIRED COMPONENTS date_time system thread)
+find_package(Boost REQUIRED COMPONENTS date_time thread OPTIONAL_COMPONENTS system)
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}

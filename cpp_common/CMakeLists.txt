@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(cpp_common)
 
-find_package(Boost REQUIRED COMPONENTS system thread)
+find_package(Boost REQUIRED COMPONENTS thread OPTIONAL_COMPONENTS system)
 find_package(console_bridge REQUIRED)
 find_package(catkin REQUIRED)
 catkin_package(
